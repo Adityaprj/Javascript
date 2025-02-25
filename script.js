@@ -75,5 +75,6 @@ else{
 
 // difference between undefined and null,NaN
 var a; // undefined
-var a=1/0; // NaN
+var b = 0/0; // NaN
 var c = null; // null
+console.log(a,b,c);
