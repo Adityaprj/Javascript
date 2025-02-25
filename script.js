@@ -2,7 +2,11 @@ console.log("hello world!");
 console.info("hello world!");
 console.warn("hello world!");
 console.error("hello world!");
-console.group("hello world!");
+// group
+console.group("pehla dein");
+console.log("das");
+console.log("s");
+console.groupEnd();
 
 // for swap values
 var a=1;
