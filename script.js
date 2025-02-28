@@ -78,3 +78,15 @@ var a; // undefined
 var b = 0/0; // NaN
 var c = null; // null
 console.log(a,b,c);
+
+// check which element is comes frequently
+
+var a = [3,4,3,1,3,2,5]
+
+{
+    "3":3,
+    "4":1,
+    "1":1,
+    "2":1,
+    "5":1
+}
