@@ -81,12 +81,22 @@ console.log(a,b,c);
 
 // check which element is comes frequently
 
-var a = [3,4,3,1,3,2,5]
-
-{
-    "3":3,
-    "4":1,
-    "1":1,
-    "2":1,
-    "5":1
+let a = [3,4,3,1,3,2,5]
+var obj = {};
+var max = 0;
+var maxElement;
+for (let i of a){
+    if (obj[i]){
+        obj[i]++;
+    }
+    else{
+        obj[i] = 1;
+    }
+    if (obj[i] > max){
+        max = obj[i];
+        maxElement = i;
+    }
 }
+console.log(maxElement);
+
+// find maximum number in array
