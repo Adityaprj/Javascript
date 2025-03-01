@@ -99,4 +99,4 @@ for (let i of a){
 }
 console.log(maxElement);
 
-// find maximum number in array
+
