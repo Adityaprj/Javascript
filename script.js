@@ -119,6 +119,4 @@ else{
         }
     }
 }
-
-
-
+console.log(isPrime);
