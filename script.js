@@ -99,4 +99,26 @@ for (let i of a){
 }
 console.log(maxElement);
 
+// check if a number is prime or not
+let n = 10;
+let isPrime = true;
+if (n <= 1){
+    isPrime = false;
+}
+else if (n === 2){
+    isPrime = true;
+}
+else if (n % 2 === 0){
+    isPrime = false;
+}
+else{
+    for (let i = 3; i <= Math.sqrt(n); i+=2){
+        if (n % i === 0){
+            isPrime = false;
+            break;
+        }
+    }
+}
+
+
 
