@@ -120,3 +120,22 @@ else{
     }
 }
 console.log(isPrime);
+
+
+// find the longest substring without repeating characters
+
+let str = "abcabcbb";
+let maxLength = 0;
+let start = 0;
+let end = 0;
+let map = {};
+for (let i = 0; i < str.length; i++){
+    if (map[str[i]]){
+        start = Math.max(start, map[str[i]] + 1);
+    }
+    map[str[i]] = i;
+    maxLength = Math.max(maxLength, i - start + 1);
+    console.log(maxLength);
+    console.log(start); 
+}
+console.log(maxLength);
