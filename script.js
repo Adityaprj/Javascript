@@ -137,3 +137,4 @@ if (rev === f){
 else{
     console.log("not palindrome");
 }       
+// find the sum of all prime numbers between 1 and n
