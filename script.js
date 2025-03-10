@@ -121,3 +121,19 @@ else{
 }
 console.log(isPrime);
 
+
+// check if a number is palindrome or not
+let f = 12321;
+let rev = 0;
+let temp = n;
+while (temp > 0){
+    let rem = temp % 10;
+    rev = rev * 10 + rem;
+    temp = parseInt(temp / 10);
+}
+if (rev === f){
+    console.log("palindrome");
+}
+else{
+    console.log("not palindrome");
+}       
