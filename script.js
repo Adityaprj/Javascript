@@ -165,4 +165,5 @@ for (let i = 2; i <= q; i++){
         sum += i;
     }
 }
+console.log(sum);
 
