@@ -167,3 +167,5 @@ for (let i = 2; i <= q; i++){
 }
 console.log(sum);
 
+// find the sum of all prime numbers between 1 and q using while loop
+
