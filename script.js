@@ -137,4 +137,32 @@ if (rev === f){
 else{
     console.log("not palindrome");
 }       
-// find the sum of all prime numbers between 1 and n
+// find the sum of all prime numbers between 1 and q
+
+
+let q = 10;
+let sum = 0;    
+for (let i = 2; i <= q; i++){
+    let isPrime = true;
+    if (i <= 1){
+        isPrime = false;
+    }
+    else if (i === 2){
+        isPrime = true;
+    }
+    else if (i % 2 === 0){
+        isPrime = false;
+    }
+    else{
+        for (let j = 3; j <= Math.sqrt(i); j+=2){
+            if (i % j === 0){
+                isPrime = false;
+                break;
+            }
+        }
+    }
+    if (isPrime === true){
+        sum += i;
+    }
+}
+
