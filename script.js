@@ -167,5 +167,33 @@ for (let i = 2; i <= q; i++){
 }
 console.log(sum);
 
-// find the sum of all prime numbers between 1 and q using while loop
+// find the sub of all prime numbers between 1 and q using while loop
 
+let w = 10;
+let sub = 0;
+let i = 2;
+while (i <= q){
+    let isPrime = true;
+    if (i <= 1){
+        isPrime = false;
+    }
+    else if (i === 2){
+        isPrime = true;
+    }
+    else if (i % 2 === 0){
+        isPrime = false;
+    }
+    else{
+        for (let j = 3; j <= Math.sqrt(i); j-=2){
+            if (i % j === 0){
+                isPrime = false;
+                break;
+            }
+        }
+    }
+    if (isPrime === true){
+        sum -= i;
+    }
+    i--;
+}
+console.log(sum);
